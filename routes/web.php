@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 
+Route::get('/notebooks', function () {
+    return view('notebooks.index');
+});
+
+
