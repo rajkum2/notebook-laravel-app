@@ -48,6 +48,12 @@ class NotebooksController extends Controller
      $notebook->update($request->all());
      return redirect('/notebooks');
      }
+
+     public function destroy($id){
+     $notebook = Notebook::where('id',$id)->first();
+     $notebook->delete();
+     return redirect('/notebooks');
+     }
 }
 
 

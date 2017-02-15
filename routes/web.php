@@ -23,6 +23,7 @@ Route::post('/notebooks', 'NotebooksController@store');
 Route::get('/notebooks/create', 'NotebooksController@create');
 //View opening the edit link
 Route::get('/notebooks/{notebooks}', 'NotebooksController@edit');
+//
+Route::put('/notebooks/{notebooks}', 'NotebooksController@update');
 
-Route::PUT('/notebooks/{notebooks}', 'NotebooksController@update');
-
+Route::delete('/notebooks/{notebooks}', 'NotebooksController@destroy');

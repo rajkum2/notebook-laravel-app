@@ -38,7 +38,9 @@
                             <a class="card-link" href="/notebooks/{{$notebook->id}}">
                                 Edit Notebook
                             </a>
-                            <form action="#" class="pull-xs-right5 card-link" method="POST" style="display:inline">
+                            <form action="/notebooks/{{$notebook->id}}" class="pull-xs-right5 card-link" method="POST" style="display:inline">
+                                {{method_field('DELETE')}}
+                                {{csrf_field()}}
                                 <input class="btn btn-sm btn-danger" type="submit" value="Delete">
                                 </input>
                             </form>
