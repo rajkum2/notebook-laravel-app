@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Notebook;
 
-
 class NotebooksController extends Controller
 {
 	//function passing data to the index.blade.php
@@ -22,6 +21,13 @@ class NotebooksController extends Controller
     {
          return view('notebooks.create');
  
+     }
+
+     //Fetching all the data that is submitted in the form create.blade.php
+     public function store(Request $request){
+       
+       return $request->all();
+     
      }
    
 }
