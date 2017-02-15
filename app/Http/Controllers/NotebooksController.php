@@ -25,8 +25,12 @@ class NotebooksController extends Controller
 
      //Fetching all the data that is submitted in the form create.blade.php
      public function store(Request $request){
-       
-       return $request->all();
+       //Getting data from the form into the variable
+       $dataInput = $request->all();
+       //Pushing the data to the Notebook model
+       Notebook::create($dataInput);
+       //Redirecting to notebooks page
+       return redirect('/notebooks');
      
      }
    

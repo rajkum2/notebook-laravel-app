@@ -20,7 +20,7 @@
                 
                 <!-- ================ Notebooks==================== -->
                 <!-- notebook1 -->
-                //Looping through the notebooks from database.
+                <!--Looping through the notebooks from database.-->
                 @foreach($notebooks as $notebook)
                 <div class="col-sm-6 col-md-3">
                     <div class="card">
