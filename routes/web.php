@@ -21,5 +21,7 @@ Route::get('/notebooks', 'NotebooksController@index');
 Route::post('/notebooks', 'NotebooksController@store');
 //View for creating a new book with a form page.
 Route::get('/notebooks/create', 'NotebooksController@create');
+//View opening the edit link
+Route::get('/notebooks/{notebooks}', 'NotebooksController@edit');
 
 

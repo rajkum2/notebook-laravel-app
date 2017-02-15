@@ -35,7 +35,7 @@
                             <img alt="Responsive image" class="img-fluid" src="dist/img/notebook.jpg"/>
                         </a>
                         <div class="card-block">
-                            <a class="card-link" href="#">
+                            <a class="card-link" href="/notebooks/{{$notebook->id}}">
                                 Edit Notebook
                             </a>
                             <form action="#" class="pull-xs-right5 card-link" method="POST" style="display:inline">

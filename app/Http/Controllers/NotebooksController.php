@@ -34,4 +34,10 @@ class NotebooksController extends Controller
      
      }
    
+     public function edit($id)
+     {
+      //Fetching the notebook as per the id
+      $notebook = Notebook::where('id',$id)->first();
+      return $notebook;
+     }
 }
