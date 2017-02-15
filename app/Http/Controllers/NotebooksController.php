@@ -8,6 +8,7 @@ use App\Notebook;
 
 class NotebooksController extends Controller
 {
+	//function passing data to the index.blade.php
     public function index()
     {
     //Fetching all data from database
@@ -16,4 +17,11 @@ class NotebooksController extends Controller
      return view('notebooks.index',compact('notebooks'));
     }
 
+    //Calling the create.blade.php page
+    public function create()
+    {
+         return view('notebooks.create');
+ 
+     }
+   
 }
