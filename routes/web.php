@@ -24,4 +24,5 @@ Route::get('/notebooks/create', 'NotebooksController@create');
 //View opening the edit link
 Route::get('/notebooks/{notebooks}', 'NotebooksController@edit');
 
+Route::PUT('/notebooks/{notebooks}', 'NotebooksController@update');
 

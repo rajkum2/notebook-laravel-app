@@ -38,6 +38,26 @@ class NotebooksController extends Controller
      {
       //Fetching the notebook as per the id
       $notebook = Notebook::where('id',$id)->first();
-      return $notebook;
+      return view('notebooks.edit')->with('notebook',$notebook);
+     }
+
+     public function update(Request $request,$id){
+     //Defining notebook variable
+     $notebook = Notebook::where('id',$id)->first();
+     //Fetching the updated notebook name
+     $notebook->update($request->all());
+     return redirect('/notebooks');
      }
 }
+
+
+
+
+
+
+
+
+
+
+
+
