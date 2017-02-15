@@ -10,9 +10,10 @@ class NotebooksController extends Controller
 {
     public function index()
     {
+    //Fetching all data from database
      $notebooks = Notebook::all();
-
-     return $notebooks;
+    //Passing data to the view "notebooks.index"
+     return view('notebooks.index',compact('notebooks'));
     }
 
 }
